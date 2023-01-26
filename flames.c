@@ -22,7 +22,7 @@ steps
                 13  14  15  16  17  18
                 19  20  21  22  ...
 
-9) after each of the counting we will cross or cut that letter.
+9) after each of the counting we will cross or cut that letter. the next counting will start from the next letter of the last crossed letter.
     if the count number is 2 we will cut letter 'l' and if it is 9 we will cut letter 'a'
 10) in every run we won't consider or count the crossed letters.
 11) we will continue counting until 1 letter remain in the word 'flames' ( 5 times )
@@ -78,7 +78,7 @@ void main()
     flamesStageTwo(count);  
     //main function ends here...
 }
-//Function to find the last remaining character in "flames".
+//Function to find the last remaining character in 'flames'.
 void flamesStageTwo(int count)
 {
     int i,j,k=-1,h,co;
@@ -107,7 +107,7 @@ void flamesStageTwo(int count)
             ch=a[i];
         }
     }
-    print(ch);//Function call to print the output.
+    print(ch);  //Function call to print the output.
 }
 //Function to print the output.
 void print(char ch)
