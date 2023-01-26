@@ -5,7 +5,8 @@ flames is a game used to play by the kids on old days.
 it's a game for finding the relationship between two names or we can say two peoples.
 steps 
 1) write two names
-2) take the first letter in the first name and cut all the same letters from the two names including the fist letter (this will happen only if there is one or more same letter available for the taken letter)
+2) take the first letter in the first name and cut all the same letters from the two names including the fist letter 
+    (this will happen only if there is one or more same letter available for the taken letter)
 3) then go to second letter and do the same.
 4) after traversing through all letters in two words, we will take the count of the remaining untouched or non-crossed letters in the two words.
 5) the count will be a whole number ( like 1,2,3,...,7,... )
