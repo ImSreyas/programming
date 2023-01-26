@@ -1,2 +1,2 @@
 # programmes
-This repo contains all my self made progrmmes.
+This repo contains all my self made programmes.
