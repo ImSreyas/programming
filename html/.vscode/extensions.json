@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "formulahendry.code-runner",
+        "ms-mssql.mssql",
+        "mtxr.sqltools",
+        "techer.open-in-browser",
+        "ritwickdey.LiveServer"
+    ]
+}

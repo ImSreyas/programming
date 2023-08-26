@@ -1,0 +1,10 @@
+.menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    
+   
+}
+.menu ul a li{
+    padding: 0 1em;
+}

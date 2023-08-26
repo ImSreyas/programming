@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sixth program</title>
+    <script>
+        function showPasswordAlert(){
+            const password = document.forms["login"]["user_pass"].value;
+            window.alert("your password is"  +password)
+        }
+    </script>
+    <style>
+        form{
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            height: 500px;
+            border: 1px solid red;
+            justify-content: center;
+        }
+
+    </style>
+    <title>Sixth program</title>
+</head>
+<body>
+    <form name="login" onsubmit="showPasswordAlert()">
+            <label for="user_id">User ID</label>
+            <input type="text" id="user_id" name="user_id">
+            <label for="user_pass">Password</label>
+            <input type="password" id="user_pass" name="user_pass">
+        <input type="submit" value="submit">
+    </form>
+    
+</body>
+</html>

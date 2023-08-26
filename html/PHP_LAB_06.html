@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>sixth Program</title>
+    <script>
+        function validat(){ 
+            const id = document.forms["login"]["user_id"].value;
+            const name = document.forms["login"]["user_name"].value;
+            const phone = document.forms["login"]["user_phone"].value;
+            const email = document.forms["login"]["user_emal"].value;
+            const password = document.forms["login"]["user_pass"].value;
+
+            if(name == ""){
+                window.alert("Name shouldn't be empty");
+                return false;
+            }
+            if(phone==""){
+                window.alert("phone number is empty");
+                return false;
+            }
+            if(isNaN(phone)){
+                window.alert("phone number contains charactors");
+                return false;
+            }
+            if(email==""){
+                window.alert("Email shouldn't be empty");
+                return false;
+            }
+            return true;
+        }
+    </script>
+    <style>
+        form{
+            display: flex;
+            gap: 10px;
+            width: 300px;
+            flex-direction: column;
+            margin:auto;
+            padding-top: 150px;
+        }
+    </style>
+</head>
+<body>
+    <form name="login" onsubmit="validat()">
+            <label for="user_id">User ID</label>
+            <input type="text" id="user_id" name="user_id">
+            <label for="user_name">Name</label>
+            <input type="text" id="user_name" name="user_name">
+            <label for="user_phone">Phone</label>
+            <input type="text" id="user_phone" name="user_phone">
+            <label for="user_emal">Email</label>
+            <input type="email" id="user_emal" name="user_emal">
+            <label for="user_pass">Password</label>
+            <input type="password" id="user_pass" name="user_pass">
+        <input type="submit" value="submit">
+    </form> 
+</body>
+</html>
